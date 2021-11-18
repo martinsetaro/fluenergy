@@ -1,0 +1,633 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+main {
+  width: 100%;
+  height: 3000px;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  margin-top: 0;
+  z-index: 22;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-left: 30px;
+  line-height: 60px;
+}
+
+header nav ul li a {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header nav ul h2 {
+  font-family: 'Righteous', cursive;
+  color: white;
+  margin-left: 80px;
+  margin-right: 50px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.linkes {
+  font-size: 20px;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s ease-in;
+  overflow: hidden;
+  padding-bottom: 10px;
+
+
+}
+
+.linkes:hover {
+  color: white;
+}
+
+.linkes:before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: .5s all ease-in;
+  bottom: 0;
+  position: absolute;
+}
+
+.linkes:hover::before {
+  width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.title {
+  width: 100%;
+  height: 700px;
+}
+
+.title h2 {
+  font-size: 90px;
+  font-family: 'Righteous', cursive;
+  color: white;
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 40px;
+}
+
+.title img {
+  width: 100%;
+  height: 700px;
+}
+
+.title h3 {
+  color: aqua;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 40px;
+}
+
+span {
+  font-family: 'Righteous', cursive;
+  font-size: 35px;
+}
+
+.marcas { 
+             width: 100%;
+             height: 140px;
+             display: flex;
+             align-items: center;
+             justify-content: space-around;
+            
+             
+}
+
+
+.productos {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presentacion {
+  width: 100%;
+  height: 140px;
+}
+
+
+
+.presentacion h2 {
+  color: dimgrey;
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 50px;
+}
+
+.cards {
+  margin-top: 40px;
+  width: 90%;
+  height: 300px;
+  display: flex;
+  box-shadow: 2px 2px 6px dimgrey;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+.image_cards {
+      width: 100%;
+      height: 300px;
+}
+.image_cards img {
+      width: 70%;
+      height: 300px;
+      border-top-left-radius: 20px;
+      
+}
+
+.info_cards {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+     
+      align-items: center;
+      padding: 10px 20px 10px 20px;
+}
+.info_cards h2{
+              font-size: 22px;
+}
+.info_cards p {
+           font-size: 18px;
+}
+.materiales {
+  width: 68%;
+  height: 900px;
+  margin-left: 360px;
+  margin-top: 470px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+.linkes_materiales {
+   width: 20%;
+   height: 850px;
+   margin-top: -900px;
+   margin-left: 70px;
+   padding-top: 20px;
+   
+   
+}
+.linkes_materiales h2,h3{
+                        font-size: 20px;
+                        color: #144C8B;
+                        text-align: center;
+                        font-family: 'Ubuntu', sans-serif;
+}
+.linkes_materiales h3 {
+                              text-decoration:underline;
+}
+.linkes_materiales li{
+  font-size: 20px;
+                        color: #144C8B;
+              
+}
+.producto_venta{
+   width: 250px;
+   height: 430px;
+   box-shadow: 2px 2px 4px dimgrey;
+   margin-bottom: 10px;
+   border-top: 3px solid dimgrey;
+   overflow: hidden;
+   
+}
+.producto_venta img{
+  width: 100%;
+  height: 250px;
+  transition: all .4s ease-in;
+  margin-bottom: 20px;
+}
+.producto_venta h2{
+       font-size: 20px;
+       font-family: 'Ubuntu', sans-serif;
+       text-align: center;
+       color: dimgrey;
+}
+.producto_venta h3{
+             font-size: 40px;
+             color: #144C8B;
+             text-align: center;
+}
+.producto_venta img:hover{
+                      transform: scale(1.1,1.1);
+}
+
+
+
+
+.productosDos {
+  width: 100%;
+  height: 550px;
+  background: ivory;
+  padding-top: 20px;
+  margin-top: 1800px;
+}
+
+.contenedor {
+  width: 80%;
+  height: 500px;
+  background: ivory;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor div {
+  width: 300px;
+  height: 450px;
+  padding-top: 20px;
+}
+
+.contenedor div h3 {
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  color: #144C8B;
+  font-size: 35px;
+}
+
+.contenedor div p {
+  color: #144C8B;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: justify;
+  margin-top: 40px;
+  line-height: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  background: #144C8B;
+  border: 1px solid dimgrey;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 120px;
+}
+
+footer div {
+  width: 400px;
+  height: 300px;
+  padding-top: 20px;
+}
+
+.ubicacion img {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.ubicacion h2 {
+  color: ivory;
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+.ubicacion h2:hover {
+  text-decoration: underline;
+}
+
+.redes {
+  color: ivory;
+  text-align: center;
+}
+
+.redes h2 {
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 40px;
+}
+
+.redes h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+}
+
+.redes h2:hover {
+  color: tomato;
+}
+
+.redes h3:hover {
+  color: tomato;
+}
+
+.redes ion-icon {
+  margin-right: 10px;
+}
+
+.empresa h2 {
+  font-family: 'Righteous', cursive;
+  color: ivory;
+  font-size: 35px;
+}
+
+.empresa h3 {
+  color: #56D9FC;
+  font-size: 1em;
+}
+
+.empresa h4 {
+  color: ivory;
+  font-size: 1em;
+  margin-top: 50px;
+}
+
+.empresa label {
+  color: ivory;
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.send {
+  background: tan;
+  color: white;
+  width: 243px;
+  margin-left: 105px;
+  margin-top: 10px;
+}
+
+nav.black {
+  background: #144C8B;
+  transition: 1s ease-in-out;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+
+  background: white;
+  transition: .5s ease;
+}
+
+button a {
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+  color: dimgrey;
+}
+
+button:hover {
+  background: #000;
+  transform: scale(1.1, 1.1);
+}
+
+button a:hover {
+  color: white;
+}
+
+.letterL {
+  font-family: 'Righteous', cursive;
+  color: red;
+}
+
+.letterE {
+  font-family: 'Righteous', cursive;
+  color: navy;
+}
+
+.letterD {
+  font-family: 'Righteous', cursive;
+  color: green;
+}
+
+.counter {
+  position: absolute;
+  margin-left: 475px;
+  margin-top: 270px;
+}
+
+.iconoQuery {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  display: none;
+  margin-left: 10px;
+  z-index: 22;
+
+}
+
+.navQuery {
+  position: absolute;
+  list-style: none;
+  background: navy;
+  display: none;
+  padding: 30px 10px 10px 10px;
+}
+
+.navQuery a {
+  color: white;
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+
+}
+
+/*--***************************************
+******** query 360px ************ */
+
+@media only screen and (max-width:365px) {
+  main {
+    width: 100%;
+    height: 3400px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .title {
+    width: 365px;
+  }
+
+  .title img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .title h2 {
+    font-size: 30px;
+    margin-top: 90px;
+    margin-left: 80px;
+    color: white;
+  }
+
+  .title h3 {
+    margin-top: 130px;
+    font-size: 1.3em;
+    margin-left: 80px;
+  }
+
+  .iconoQuery {
+    display: block;
+
+  }
+
+  .productos {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: -20px;
+    margin-left: 15px;
+  }
+
+  .productos div {
+    width: 80%;
+    height: 800px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  .productos div img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .productos p {
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  }
+
+  .presentacion {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .presentacion>h2 {
+    font-size: 18px;
+  }
+
+
+  button {
+    width: 80px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 90px;
+
+  }
+
+  .contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 1200px;
+  }
+
+  .contenedor div {
+    width: 250px;
+    margin-left: 15px;
+  }
+
+  footer {
+    margin-top: 1800px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ubicacion {
+    display: none;
+  }
+
+  .empresa h2 {
+    font-size: 40px;
+  }
+
+  .empresa h3 {
+    font-size: 25px;
+  }
+
+  .empresa h4 {
+    margin-top: 30px;
+  }
+
+  .empresa input {
+    width: 60%;
+  }
+
+  .send {
+    margin-left: 40px;
+    width: 80%;
+  }
+
+  .redes {
+    margin-left: -30px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .redes h2 {
+    font-size: 10px;
+    margin-left: 35px;
+  }
+
+  .redes h3 {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
